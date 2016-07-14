@@ -15,5 +15,6 @@ return array(
 	'View User' => 'Lihat Pengguna', 
 	'List of All Users in The Database' => 'Seluruh Daftar Pengguna Didalam Database',
 	'User' => 'Pengguna',
+	'Send Email' => 'Kirim Pesan',
 	'Logout' => 'Keluar'
 );

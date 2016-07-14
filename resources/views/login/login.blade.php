@@ -18,12 +18,10 @@
 
 @section('content')
 <div class="container">
-<form class="form-horizontal" action="" method="">
   <div class="form-group">  
     <a href="{{ action('LanguageController@english') }}" type="button" class="btn btn-default" >English</a>
     <a href="{{ action('LanguageController@indonesia') }}" type="button" class="btn btn-default" >Indonesia</a> 
   </div>
-</form>
 	<form class="form-horizontal" action="{{ url(action('LoginController@postLogin')) }}" method="post" >
 	<input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
 	<div class="form-group">

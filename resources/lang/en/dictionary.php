@@ -15,5 +15,6 @@ return array(
 	'View User' => 'View User', 
 	'List of All Users in The Database' => 'List of All Users in The Database',
 	'User' => 'User',
+	'Send Email' => 'Send Email',
 	'Logout' => 'Logout'
 );

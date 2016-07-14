@@ -15,12 +15,12 @@ use Session;
 class LanguageController extends Controller
 {
     public function english(){
-        Session::put('language','en');
-    	return view('login.login');
+        Session::put('locale','en');
+    	return \Redirect::back();
     }
 
     public function indonesia(){
-        Session::put('language','id');
-    	return view('login.login');
+        Session::put('locale','id');
+    	return \Redirect::back();
     }
 }
