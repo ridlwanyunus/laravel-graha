@@ -35,6 +35,21 @@ Route::get('/adminView', [
 	'as' => 'adminView']
 );
 
+Route::get('/userDashboard', [
+	'uses' => 'UserController@home',
+	'as' => 'userDashboard']
+);
+
+Route::get('/pageEmail', [
+	'uses' => 'UserController@pageEmail',
+	'as' => 'pageEmail']
+);
+
+Route::get('/userEmail', [
+	'uses' => 'UserController@sendEmail',
+	'as' => 'userEmail']
+);
+
 Route::post('/postLogin', 'LoginController@postLogin');
 
 Route::get('/logout', [ 

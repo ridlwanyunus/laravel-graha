@@ -17,7 +17,7 @@ class HakAksesMiddleware
     {
         if(auth()->check() && !auth()->user()->hasRule($rulename))
         {
-            return "Cannot access admin pages.";
+            return "Can not access admin pages.";
         }
         return $next($request);
     }

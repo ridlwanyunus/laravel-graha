@@ -29,9 +29,13 @@ class LoginController extends Controller
     		]))
     	{
             if(Auth::user()->roles_id == 1){
+
                 return redirect('/adminDashboard');
-            }else{
-                return redirect('/');
+
+            }elseif (Auth::user()->roles_id == 2){
+
+                return redirect('/userDashboard');
+
             }
     	}else 
     	{
