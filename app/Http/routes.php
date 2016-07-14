@@ -56,3 +56,6 @@ Route::get('/logout', [
 	'uses' => 'HomeController@logout',
 	'as' => 'logout'
 ]);
+
+Route::get('/english', 'LanguageController@english');
+Route::get('/indonesia', 'LanguageController@indonesia');

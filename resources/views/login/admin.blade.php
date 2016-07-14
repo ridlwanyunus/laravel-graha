@@ -6,11 +6,11 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Graha Site</a>
+      <a class="navbar-brand" href="#">{{ trans('dictionary.Graha Site') }}</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="{{ route('adminView') }}">Lihat User</a></li>
-      <li ><a href="{{ route('logout') }}">Logout</a></li>
+      <li class="active"><a href="{{ route('adminView') }}">{{ trans('dictionary.View User') }}</a></li>
+      <li ><a href="{{ route('logout') }}">{{ trans('dictionary.Logout') }}</a></li>
     </ul>
   </div>
 </nav>
